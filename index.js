@@ -36,11 +36,14 @@ const sayilar = [
 */
 
 //Örneğin çözümü:
+
+function KareninAlani(kenaruzunlugu) {
+  return kenaruzunlugu * kenaruzunlugu;
 function kareninAlani(kenarUzunlugu) {
   return kenarUzunlugu * kenarUzunlugu;
 }
-const alan = kareninAlani(10);
-console.log("Karenin alani:", alan);
+
+
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
 /* GÖREV 1:  
@@ -68,10 +71,14 @@ const cevre = CemberinCevresi(5)
 	3. Çemberin alanı hesaplanacaktır (💡 İPUCU: Çemberin alanı = pi * yarıçapın karesi, yarıçapın karesini bulmak için Javascript içinde tanımlı Math kütüphanesini kullanabilirsiniz. Math.pow(yaricap,2))
 	4. Hesaplanan çemberin alanı döndürülecektir.
 */
-
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+const pi = 3.14159
+function CemberinAlani(yaricap, pi) {
+    return pi * Math.pow(yaricap, 2); 
 }
+const yaricap = 15;
+const alan = CemberinAlani(yaricap, pi);
+console.log("Çemberin alanı:", alan); 
+
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
